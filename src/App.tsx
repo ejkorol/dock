@@ -9,14 +9,14 @@ interface TimeBlock {
 }
 
 function App() {
-  const [sec, setSec] = useState<boolean>(false);
+  const [_sec, setSec] = useState<boolean>(false);
   const [timeBlocks, setTimeBlocks] = useState<TimeBlock>({
     hh: [],
     mm: [],
     ss: [],
   });
 
-  const blink = (col: number): string => (col && sec ? "bg-light" : "bg-dark");
+  // const blink = (col: number): string => (col && sec ? "bg-light" : "bg-dark");
 
   const formatTime = () => {
     const d = new Date();
